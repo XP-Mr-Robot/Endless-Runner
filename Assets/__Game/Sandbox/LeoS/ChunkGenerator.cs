@@ -7,7 +7,7 @@ public class ChunkGenerator : MonoBehaviour
     // Start is called before the first frame update
     public GameObject[] chunks = new GameObject[4];
     private int position = 50;
-
+    private int spawn = 400;
     void Start()
     {
         
@@ -22,10 +22,12 @@ public class ChunkGenerator : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log("HOLA");
+      
         position = position + 100;
         this.transform.position = new Vector3(0, 0, position);
-        GameObject clone = (GameObject)Instantiate(chunks[Random.Range(0,3)], new Vector3(0, 0, position+150),Quaternion.identity);
+        GameObject clone = (GameObject)Instantiate(chunks[Random.Range(0,chunks.Length)], new Vector3(0, 0, spawn),Quaternion.identity);
+        spawn = spawn + 100;
+
         Destroy(clone, 15.0f);
     }
 }
