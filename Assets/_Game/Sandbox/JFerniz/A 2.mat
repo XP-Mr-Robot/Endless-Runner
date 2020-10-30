@@ -8,24 +8,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: A 2
-  m_Shader: {fileID: 4800000, guid: 8516d7a69675844a7a0b7095af7c46af, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 4f0e5da697d7c6147ab54a22840fb276, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_9EC82C83:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b8e2a3594732b58499aae9f1ff331e1a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_E7AB9D09:
-        m_Texture: {fileID: 2800000, guid: 94b042c6cac65884b87c8a8e0b03b424, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7f627d5d3f32ce440876ec6b2f52b11f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -57,10 +56,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_3CE283F1: 1
-    - Vector1_8E213D3C: 10
-    - Vector1_A15AB05B: 1
-    - Vector1_BEA844BF: 0.1
+    - Vector1_3CE283F1: 0.12
+    - Vector1_8E213D3C: 7.16
+    - Vector1_A15AB05B: 0.95
+    - Vector1_BEA844BF: 0.0265
     - _AlphaClip: 0
     - _Blend: 0
     - _BlendOp: 0
