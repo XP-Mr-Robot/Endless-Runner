@@ -23,7 +23,7 @@ public class Magnet : MonoBehaviour
         }
     }
 
-    IEnumerable ActivateCoins()
+    IEnumerator ActivateCoins()
     {
         coinMagnet.SetActive(true);
         yield return new WaitForSeconds(7);
