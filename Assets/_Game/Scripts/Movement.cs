@@ -15,7 +15,7 @@ public class Movement: MonoBehaviour
     public bool SwipeLeft, SwipeRight, SwipeUp, SwipeDown;
     public float XValue;
     private CharacterController m_char;
-    public float JumpPower = 70f;
+    public float JumpPower = 71f;
     private float x; 
     private float y;
     public float SpeedDodge;
