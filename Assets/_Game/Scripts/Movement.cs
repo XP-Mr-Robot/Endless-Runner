@@ -26,6 +26,21 @@ public class Movement: MonoBehaviour
     private float ColCenterY;
     internal float RollCounter;
 
+    //these two will help us know what exactly is a swipe
+    public float maxSwipeTime;//0.5
+    public float minSwipeDistance;//100
+
+
+    //these three will help us know how long did our swipe took
+    private float startTime;
+    private float endTime;
+    private float swipeTime;//this will be compared with maxTime;
+
+
+    //these three will help us know how long the swipe is
+    private Vector2 swipeStartPos;
+    private Vector2 swipeEndPos;
+    private float swipeDistance;//this will be compared with minSwipeDistance;
     void Start()
     {
         m_char = GetComponent<CharacterController>();
@@ -36,6 +51,17 @@ public class Movement: MonoBehaviour
 
     void Update()
     {
+
+
+        PlayerMovement();
+        Jump();
+        Roll();
+        SwipeTest();
+    }
+    void PlayerMovement()
+    {
+       
+
         SwipeLeft = Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow);
         SwipeRight = Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow);
         SwipeUp = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
@@ -45,7 +71,7 @@ public class Movement: MonoBehaviour
         if (SwipeLeft && !InRoll)
         {
             Debug.Log("Izquierda");
-            if(m_Side == SIDE.Mid)
+            if (m_Side == SIDE.Mid)
             {
                 NewXPos = -XValue;
                 m_Side = SIDE.Left;
@@ -77,11 +103,116 @@ public class Movement: MonoBehaviour
 
             }
         }
-        Vector3 moveVector = new Vector3(x - transform.position.x, y*Time.deltaTime, FwdSpeed*Time.deltaTime);
-        x = Mathf.Lerp(x, NewXPos, Time.deltaTime*SpeedDodge);
+        Vector3 moveVector = new Vector3(x - transform.position.x, y * Time.deltaTime, FwdSpeed * Time.deltaTime);
+        x = Mathf.Lerp(x, NewXPos, Time.deltaTime * SpeedDodge);
         m_char.Move(moveVector);
-        Jump();
-        Roll();
+    }
+
+    void SwipeTest()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                startTime = Time.time;//this will see when we started touching the screen
+                swipeStartPos = touch.position;//where we have started touching the screen
+            }
+            else if (touch.phase == TouchPhase.Ended)
+            {
+                endTime = Time.time;//the time when we left th screen
+                swipeEndPos = touch.position;//the position when we left the screen
+
+                swipeTime = endTime - startTime;//this will calculate how long our swip took
+                swipeDistance = (swipeEndPos - swipeStartPos).magnitude; //this will calculate how long our swipe is
+
+                if (swipeTime < maxSwipeTime && swipeDistance > minSwipeDistance)
+                {//here if we swipe fast and long enough then it will be a swipe
+                    Debug.Log("swipe");
+                    SwipeControl();
+                }
+            }
+        }
+    }
+    void SwipeControl()
+    {
+        Vector2 distance = swipeEndPos - swipeStartPos;
+        float xDistance = Mathf.Abs(distance.x);
+        float yDistance = Mathf.Abs(distance.y);
+
+
+        if (xDistance > yDistance)
+        {
+
+            Debug.Log("horizontal swipe");
+
+            if (distance.x < 0 && !InRoll)
+            {
+                Debug.Log("Izquierda");
+                if (m_Side == SIDE.Mid)
+                {
+                    NewXPos = -XValue;
+                    m_Side = SIDE.Left;
+                }
+
+                else if (m_Side == SIDE.Right)
+                {
+                    NewXPos = 0;
+                    m_Side = SIDE.Mid;
+
+                }
+            }
+            if (distance.x > 0 && !InRoll)
+            {
+                Debug.Log("Derecha");
+
+                if (m_Side == SIDE.Mid)
+                {
+                    NewXPos = XValue;
+                    m_Side = SIDE.Right;
+
+                }
+
+                else if (m_Side == SIDE.Left)
+                {
+                    NewXPos = 0;
+                    m_Side = SIDE.Mid;
+
+                }
+
+            }
+          
+        }
+        if (xDistance < yDistance)//if you are swiping up or down
+        {
+            Debug.Log("vertical swipe");
+           
+            if (m_char.isGrounded)
+            {
+                if (distance.y > 0)
+                {
+                    Debug.Log("Arriba");
+                    y = JumpPower;
+                    InJump = true;
+                }
+
+            }
+
+            else if (distance.y < 0)
+            {
+                y -= JumpPower * 2 * Time.deltaTime;
+                InJump = false;
+            }
+
+        }
+
+
+       
+
+       
+        Vector3 moveVector = new Vector3(x - transform.position.x, y * Time.deltaTime, FwdSpeed * Time.deltaTime);
+        x = Mathf.Lerp(x, NewXPos, Time.deltaTime * SpeedDodge);
+        m_char.Move(moveVector);
     }
 
     public void Jump()

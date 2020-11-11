@@ -17,9 +17,27 @@ public class Vida : MonoBehaviour
     {
         
     }
-    public void OnTriggerEnter(Collider col)
+    /* public void OnTriggerEnter(Collider col)
+     {
+         switch (col.gameObject.tag)
+         {
+             case "obstaculo":
+                 vidas -= 1;
+                 Debug.Log("tienes " + vidas + " vidas");
+                 if (vidas <= 0)
+                 {
+                     Debug.Log("Game over");
+                     Destroy(gameObject);
+                 }
+                 break;
+         }
+
+     }
+    */
+
+    public void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        switch (col.gameObject.tag)
+        switch (hit.gameObject.tag)
         {
             case "obstaculo":
                 vidas -= 1;
@@ -31,6 +49,5 @@ public class Vida : MonoBehaviour
                 }
                 break;
         }
-        
     }
 }

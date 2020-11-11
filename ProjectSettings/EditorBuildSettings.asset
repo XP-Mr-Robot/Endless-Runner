@@ -5,16 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Alpha/Scenes/Home.unity
     guid: e5241a56b1d6e4c4698b59ae8bf51590
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Alpha/Scenes/Core.unity
     guid: 8362fa241a8614def9f93dce2fcce33f
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Alpha/Scenes/Endless.unity
     guid: 10ed29b8863ae4a19aed324a4c3f3ec3
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Alpha/Scenes/StoryMode.unity
     guid: 1bb631c5f00454ed38921a44a1e32246
+  - enabled: 1
+    path: Assets/_Game/Sandbox/LeoS/Test.unity
+    guid: 1a7a84989d769c94f9e68d9544c0f3ce
   m_configObjects: {}
