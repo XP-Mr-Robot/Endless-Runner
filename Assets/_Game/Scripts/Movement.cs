@@ -15,7 +15,7 @@ public class Movement: MonoBehaviour
     public bool SwipeLeft, SwipeRight, SwipeUp, SwipeDown;
     public float XValue;
     private CharacterController m_char;
-    public float JumpPower = 71f;
+    public float JumpPower = 70f;
     private float x; 
     private float y;
     public float SpeedDodge;
@@ -122,6 +122,13 @@ public class Movement: MonoBehaviour
             m_char.height = ColHeight/2f;
             InRoll = true;
             InJump = false;
+        }
+    }
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Boost")
+        {
+            FwdSpeed = 90f;
         }
     }
 }

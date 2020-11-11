@@ -6,6 +6,7 @@ TagManager:
   tags:
   - obstaculo
   - Coin Magnet
+  - Boost
   layers:
   - Default
   - TransparentFX
