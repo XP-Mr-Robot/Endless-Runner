@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: cc421da483ed06c49933077a621bff25, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.0007906279, g: 0.024574103, b: 0.105010435, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -214,7 +214,7 @@ LightingSettings:
   m_BounceScale: 1
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
+  m_UsingShadowmask: 0
   m_BakeBackend: 1
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
@@ -225,7 +225,7 @@ LightingSettings:
   m_CompAOExponent: 1
   m_CompAOExponentDirect: 0
   m_ExtractAO: 0
-  m_MixedBakeMode: 2
+  m_MixedBakeMode: 0
   m_LightmapsBakeMode: 1
   m_FilterMode: 1
   m_LightmapParameters: {fileID: 0}
@@ -380,6 +380,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Husky
       objectReference: {fileID: 0}
+    - target: {fileID: 3795449285825437439, guid: 0bbb6183fa8476e4d8a3ed14260f7de5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795449285825437439, guid: 0bbb6183fa8476e4d8a3ed14260f7de5, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bbb6183fa8476e4d8a3ed14260f7de5, type: 3}
 --- !u!4 &1442898613 stripped
@@ -505,6 +513,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd378c971cda3cc478f6444b09a1a8e1, type: 3}
+--- !u!1 &1808229371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3795449285825437439, guid: 0bbb6183fa8476e4d8a3ed14260f7de5, type: 3}
+  m_PrefabInstance: {fileID: 1183360827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1808229372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808229371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443e7d3c3d247412a9a271382f012b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Verbose: 2
+  m_IsReady: 0
+--- !u!4 &1808229377 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3795449285825437432, guid: 0bbb6183fa8476e4d8a3ed14260f7de5, type: 3}
+  m_PrefabInstance: {fileID: 1183360827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8731019220408724642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -520,6 +552,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 971430391198126592, guid: 9a630d295a157440497627a69bdd93af, type: 3}
+      propertyPath: m_Text
+      value: 'Gracias por probar esta version de DogGo! '
+      objectReference: {fileID: 0}
     - target: {fileID: 1714068859999759362, guid: 9a630d295a157440497627a69bdd93af, type: 3}
       propertyPath: m_Time
       value: 15
@@ -527,6 +563,18 @@ PrefabInstance:
     - target: {fileID: 1714068859999759362, guid: 9a630d295a157440497627a69bdd93af, type: 3}
       propertyPath: m_Decimals
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714068859999759418, guid: 9a630d295a157440497627a69bdd93af, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714068859999759418, guid: 9a630d295a157440497627a69bdd93af, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714068859999759418, guid: 9a630d295a157440497627a69bdd93af, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9811321
       objectReference: {fileID: 0}
     - target: {fileID: 3657608116502613719, guid: 9a630d295a157440497627a69bdd93af, type: 3}
       propertyPath: m_LocalizationFile
@@ -551,10 +599,14 @@ PrefabInstance:
     - target: {fileID: 5972314577341454020, guid: 9a630d295a157440497627a69bdd93af, type: 3}
       propertyPath: m_Activate.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1808229377}
     - target: {fileID: 6062832481880045625, guid: 9a630d295a157440497627a69bdd93af, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062832482131544080, guid: 9a630d295a157440497627a69bdd93af, type: 3}
+      propertyPath: m_Text
+      value: Testing
       objectReference: {fileID: 0}
     - target: {fileID: 8731019219070067650, guid: 9a630d295a157440497627a69bdd93af, type: 3}
       propertyPath: m_Deactivate.Array.data[0]
