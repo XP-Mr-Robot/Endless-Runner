@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8035157500877777728}
   m_Layer: 0
   m_Name: polySurface19
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 8558463138141444278}
   m_Layer: 0
   m_Name: obstaculo perros
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

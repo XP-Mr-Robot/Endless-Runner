@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
         if(other.tag == "Player")
         {
             PlayerManager.numberOfCoins += 1;
-            Debug.Log("Coins:" + PlayerManager.numberOfCoins);
+           // Debug.Log("Coins:" + PlayerManager.numberOfCoins);
             Destroy(gameObject);
         }
     }
