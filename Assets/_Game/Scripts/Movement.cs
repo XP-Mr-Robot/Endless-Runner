@@ -7,7 +7,7 @@ public enum SIDE { Left, Mid, Right }
 
 public class Movement: MonoBehaviour
 {
-
+    Animator anim;
 
     public SIDE m_Side = SIDE.Mid;
     float NewXPos = 0f;
@@ -47,6 +47,8 @@ public class Movement: MonoBehaviour
         transform.position = Vector3.zero;
         ColHeight = m_char.height;
         ColCenterY = m_char.center.y;
+
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -194,6 +196,7 @@ public class Movement: MonoBehaviour
                     Debug.Log("Arriba");
                     y = JumpPower;
                     InJump = true;
+                    anim.SetBool("IsJumping", true);
                 }
 
             }
