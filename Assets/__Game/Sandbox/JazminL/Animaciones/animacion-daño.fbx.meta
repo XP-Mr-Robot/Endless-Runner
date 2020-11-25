@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: d5d75c9c8b4d20c4886c873a5ffe567c
+guid: 46c5ed98f4190134abc1ec72bca180cf
 ModelImporter:
   serializedVersion: 20101
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -3748589576176916032
+    second: "animacion-da\xF1o"
   externalObjects: {}
   materials:
     materialImportMode: 1
