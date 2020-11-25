@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Alpha/Scenes/StoryMode.unity
     guid: 1bb631c5f00454ed38921a44a1e32246
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Game/Sandbox/LeoS/Test.unity
     guid: 1a7a84989d769c94f9e68d9544c0f3ce
   m_configObjects: {}

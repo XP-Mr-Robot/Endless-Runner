@@ -15,20 +15,20 @@ namespace VrGamesDev
 
         // Use this for initialization
         // para decirle al engine que es una funcion nueva
-        private new void Start()
-        {
-            // para invocar al padre
-            base.Start();
+        //private new void Start()
+        //{
+        //    // para invocar al padre
+        //    base.Start();
 
-            StartCoroutine(this.Start_IEnumerator());
-        }
+        //    StartCoroutine(this.Start_IEnumerator());
+        //}
 
-        private IEnumerator Start_IEnumerator()
-        {
-            this.transform.SetParent(Camera.main.transform, false);
+        //private IEnumerator Start_IEnumerator()
+        //{
+        //    this.transform.SetParent(Camera.main.transform, false);
 
-            yield return null;
-        }
+        //    yield return null;
+        //}
     }
 }
 

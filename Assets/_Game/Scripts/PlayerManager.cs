@@ -5,8 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
 
-    public static int numberOfCoins = 0; 
-   
+    public AudioSource coinSound;
 
-    
+
 }
