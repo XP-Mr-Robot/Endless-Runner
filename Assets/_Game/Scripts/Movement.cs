@@ -227,6 +227,7 @@ public class Movement: MonoBehaviour
                 Debug.Log("Arriba");
                 y = JumpPower;
                 InJump = true;
+                anim.SetTrigger("IsJumping");
             }
 
         }
@@ -234,6 +235,7 @@ public class Movement: MonoBehaviour
         {
             y -= JumpPower * 2 * Time.deltaTime;
             InJump = false;
+
         }
     }
     public void Roll()
