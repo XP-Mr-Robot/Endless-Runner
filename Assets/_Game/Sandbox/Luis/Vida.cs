@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
+    Animator anim;
+
     public static int vidas = 3;
     int lastCollision;
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -24,6 +27,7 @@ public class Vida : MonoBehaviour
                 if (lastCollision != hit.gameObject.GetInstanceID())
                     TakeDamage();
                 lastCollision = hit.gameObject.GetInstanceID();
+                anim.SetTrigger("Damage");
                 break;
 
 
@@ -38,6 +42,7 @@ public class Vida : MonoBehaviour
         Debug.Log("tienes " + vidas + " vidas");
         if (vidas <= 0)
         {
+            anim.SetTrigger("Death");
             Debug.Log("Game over");
             Destroy(gameObject);
         }

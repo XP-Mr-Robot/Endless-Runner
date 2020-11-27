@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 3627431d1d6cf0c4ba405eaa482d6e8b
+guid: b0bd55488d0a70d4f94abf7b4c989ea4
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
-      74: -2697315862461374874
-    second: prueba-run
+      74: -5252816984213320552
+    second: idle
   externalObjects: {}
   materials:
     materialImportMode: 1

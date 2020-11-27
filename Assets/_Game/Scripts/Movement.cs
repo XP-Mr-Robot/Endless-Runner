@@ -196,7 +196,7 @@ public class Movement: MonoBehaviour
                     Debug.Log("Arriba");
                     y = JumpPower;
                     InJump = true;
-                    anim.SetBool("IsJumping", true);
+
                 }
 
             }
@@ -258,6 +258,7 @@ public class Movement: MonoBehaviour
             m_char.height = ColHeight/2f;
             InRoll = true;
             InJump = false;
+            anim.SetTrigger("Agachao");
         }
     }
 }
