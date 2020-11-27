@@ -7,7 +7,9 @@ public enum SIDE { Left, Mid, Right }
 
 public class Movement: MonoBehaviour
 {
+    Animator anim;
 
+    public AudioClip audioSalto;
 
     public SIDE m_Side = SIDE.Mid;
     float NewXPos = 0f;
@@ -47,6 +49,8 @@ public class Movement: MonoBehaviour
         transform.position = Vector3.zero;
         ColHeight = m_char.height;
         ColCenterY = m_char.center.y;
+
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -194,6 +198,7 @@ public class Movement: MonoBehaviour
                     Debug.Log("Arriba");
                     y = JumpPower;
                     InJump = true;
+
                 }
 
             }
@@ -224,6 +229,9 @@ public class Movement: MonoBehaviour
                 Debug.Log("Arriba");
                 y = JumpPower;
                 InJump = true;
+                anim.SetTrigger("IsJumping");
+
+                AudioSource.PlayClipAtPoint(audioSalto, transform.position, 0.5f);
             }
 
         }
@@ -231,6 +239,7 @@ public class Movement: MonoBehaviour
         {
             y -= JumpPower * 2 * Time.deltaTime;
             InJump = false;
+
         }
     }
     public void Roll()
@@ -253,6 +262,7 @@ public class Movement: MonoBehaviour
             m_char.height = ColHeight/2f;
             InRoll = true;
             InJump = false;
+            anim.SetTrigger("Agachao");
         }
     }
 }

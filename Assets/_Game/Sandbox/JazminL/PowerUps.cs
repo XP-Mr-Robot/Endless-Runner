@@ -10,7 +10,7 @@ public class PowerUps : MonoBehaviour
 
 
     //Powerup-Iman
-    
+
 
 
     //Powerup-Skateboard
@@ -23,7 +23,7 @@ public class PowerUps : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             PickUp(other);
         }
@@ -35,7 +35,6 @@ public class PowerUps : MonoBehaviour
 
         PlayerStats stats = player.GetComponent<PlayerStats>();
         stats.health += MasUno;
-       
 
     }
 

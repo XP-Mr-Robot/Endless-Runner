@@ -17,6 +17,14 @@ public class Coin : MonoBehaviour
             GameObject.Find("GameManager").GetComponent<PlayerManager>().coinSound.Play();
             Destroy(gameObject);
         }
+        if(other.gameObject.tag == "Coin Magnet")
+        {
+            move.enabled = true;
+        }
+           
     }
     
+
+
+
 }
