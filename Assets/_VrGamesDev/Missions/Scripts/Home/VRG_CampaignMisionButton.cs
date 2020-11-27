@@ -14,7 +14,7 @@ namespace VrGamesDev.Missions
     {
         [SerializeField] private int m_Id = 0;
         [SerializeField] private bool m_Star = false;
-        [SerializeField] private bool m_Interactable = false;
+        [SerializeField] private bool m_Interactable = true;
 
         [Header("From: Components")]
         [SerializeField] private Transform m_GoStar = null;
@@ -40,7 +40,7 @@ namespace VrGamesDev.Missions
 
             // activar o desactivar el boton
             Button button = this.GetComponent<Button>();
-            this.m_Interactable = false;
+            this.m_Interactable = true;
             if (this.m_Id <= currentLocal)
             {
                 this.m_Interactable = true;
