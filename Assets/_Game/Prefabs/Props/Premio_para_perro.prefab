@@ -128,8 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2cc629e45ee254d8235edfb2a3d26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playertransform: {fileID: 0}
-  moveSpeed: 17
 --- !u!135 &4996654859603427721
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -166,8 +164,8 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8733259098445851096}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d24ab19796a5954490276ca63b741eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d2cc629e45ee254d8235edfb2a3d26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
