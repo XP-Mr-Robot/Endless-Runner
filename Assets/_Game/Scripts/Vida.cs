@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
+
+    Animator anim;
+
+    public AudioClip audioMuerte;
+    public AudioClip audioDaño;
     public int vidas = 3;
     int lastCollision;
     public GameObject Fail;
@@ -11,6 +16,8 @@ public class Vida : MonoBehaviour
     Collider m_Collider;
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
+
         m_Collider = GetComponent<Collider>();
 
         controller = GetComponent<CharacterController>();
@@ -29,7 +36,12 @@ public class Vida : MonoBehaviour
            {
                case "obstaculo":
                 if (lastCollision != hit.gameObject.GetInstanceID())
+                {
                     TakeDamage();
+
+                    anim.SetTrigger("Damage");
+                    AudioSource.PlayClipAtPoint(audioDaño, transform.position);
+                }
                 lastCollision = hit.gameObject.GetInstanceID();
                 break;
 
@@ -47,9 +59,11 @@ public class Vida : MonoBehaviour
         Debug.Log("tienes " + vidas + " vidas");
         if (vidas <= 0)
         {
+            this.controller.enabled = !m_Collider.enabled;
+            anim.SetTrigger("Death");
+            AudioSource.PlayClipAtPoint(audioMuerte, transform.position);
             Debug.Log("Game over");
             Fail.SetActive(true);
-            Destroy(gameObject);
         }
 
 
