@@ -6,6 +6,9 @@ public class Vida : MonoBehaviour
 {
     Animator anim;
 
+    public AudioClip audioMuerte;
+    public AudioClip audioDaño;
+
     public static int vidas = 3;
     int lastCollision;
     void Start()
@@ -25,9 +28,13 @@ public class Vida : MonoBehaviour
            {
                case "obstaculo":
                 if (lastCollision != hit.gameObject.GetInstanceID())
+                {
                     TakeDamage();
+                    anim.SetTrigger("Damage");
+                    AudioSource.PlayClipAtPoint(audioDaño, transform.position);
+                }
+
                 lastCollision = hit.gameObject.GetInstanceID();
-                anim.SetTrigger("Damage");
                 break;
 
 
@@ -43,6 +50,7 @@ public class Vida : MonoBehaviour
         if (vidas <= 0)
         {
             anim.SetTrigger("Death");
+            AudioSource.PlayClipAtPoint(audioMuerte, transform.position);
             Debug.Log("Game over");
             Destroy(gameObject);
         }

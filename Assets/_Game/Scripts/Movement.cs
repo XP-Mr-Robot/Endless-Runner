@@ -9,6 +9,8 @@ public class Movement: MonoBehaviour
 {
     Animator anim;
 
+    public AudioClip audioSalto;
+
     public SIDE m_Side = SIDE.Mid;
     float NewXPos = 0f;
     [HideInInspector]
@@ -228,6 +230,8 @@ public class Movement: MonoBehaviour
                 y = JumpPower;
                 InJump = true;
                 anim.SetTrigger("IsJumping");
+
+                AudioSource.PlayClipAtPoint(audioSalto, transform.position, 0.5f);
             }
 
         }
