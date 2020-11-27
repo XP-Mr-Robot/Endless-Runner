@@ -32,11 +32,11 @@ namespace VrGamesDev.Missions
 
 		[Header("From: Campaing")]
 		[Tooltip("The total missions in your game")]
-		[SerializeField] private int m_MissionTotal = 50;
+		[SerializeField] private int m_MissionTotal = 3;
 		[SerializeField] public static int missionTotal { get { return Instance.m_MissionTotal; } }
 
 		[Tooltip("The missions shown per page")]
-		[SerializeField] private int m_MissionPerPages = 12;
+		[SerializeField] private int m_MissionPerPages = 3;
 		[SerializeField] public static int missionPerPages { get { return Instance.m_MissionPerPages; } }
 
 
