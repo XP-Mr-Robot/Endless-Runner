@@ -9,6 +9,7 @@ public class Vida : MonoBehaviour
     public AudioClip audioMuerte;
     public AudioClip audioDaño;
 
+
     public static int vidas = 3;
     int lastCollision;
     void Start()
@@ -33,7 +34,7 @@ public class Vida : MonoBehaviour
                     anim.SetTrigger("Damage");
                     AudioSource.PlayClipAtPoint(audioDaño, transform.position);
                 }
-
+                
                 lastCollision = hit.gameObject.GetInstanceID();
                 break;
 
@@ -54,9 +55,13 @@ public class Vida : MonoBehaviour
             Debug.Log("Game over");
             Destroy(gameObject);
         }
+
+    }
+
+    public void MasUno()
+    {
+        vidas += 1;
     }
 
 
-
-   
 }

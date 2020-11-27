@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    
+
+    public Transform playertransform;
+    public float moveSpeed = 10f;
+
+    CoinMove move;
     void Start()
     {
-        
+        playertransform = GameObject.FindGameObjectWithTag("Player").transform;
+        move = gameObject.GetComponent<CoinMove>();
     }
 
     
@@ -23,6 +28,14 @@ public class Coin : MonoBehaviour
            // Debug.Log("Coins:" + PlayerManager.numberOfCoins);
             Destroy(gameObject);
         }
+        if(other.gameObject.tag == "Coin Magnet")
+        {
+            move.enabled = true;
+        }
+           
     }
     
+
+
+
 }
