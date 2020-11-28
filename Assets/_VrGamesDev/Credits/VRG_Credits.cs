@@ -13,6 +13,11 @@ namespace VrGamesDev.Missions
     public class VRG_Credits : VRG_Base
     {
         [Header("From: Components")]
+        /// <summary>
+        /// The time it will wait to perform the actions
+        /// </summary>
+        [Tooltip("The time it will wait to perform the actions")]
+        [SerializeField] private float m_Delay = 2.0f;
 
         /// <summary>
         /// From UI: The Body text container as a RectTransform, the information from credits will be displayed here
@@ -68,6 +73,8 @@ namespace VrGamesDev.Missions
         /// </summary>
         protected IEnumerator Do()
         {
+            // the delay to start the scrolling
+            yield return new WaitForSeconds(this.m_Delay);
 
             // calculate speed based on screen height
             float fScreenSpeed = Screen.height / this.m_Height;
