@@ -37,6 +37,12 @@ namespace VrGamesDev.Missions
             Text textMission = this.m_GoText.GetComponentInChildren<Text>();
             textMission.text = this.m_Id.ToString();
 
+            switch (this.m_Id)
+            {
+                case 1: textMission.text = "Dia"; break;
+                case 2: textMission.text = "Tarde"; break;
+                case 3: textMission.text = "Noche"; break;
+            }
 
             // activar o desactivar el boton
             Button button = this.GetComponent<Button>();
@@ -51,6 +57,9 @@ namespace VrGamesDev.Missions
             // si ya realizo la misión con estrella, desplegarla
             this.m_Star = (starLocal && button.interactable);
             this.m_GoStar.gameObject.SetActive(this.m_Star);
+
+
+
         }
 
 
@@ -58,6 +67,11 @@ namespace VrGamesDev.Missions
         public override void OnClick()
         {
             VRG_Session.SetInt("Campaign", "Current", this.m_Id);
+
+            Text textMission = this.m_GoText.GetComponentInChildren<Text>();
+            
+            VRG_FaderScene.Load(textMission.text, 0);
+
             print("OnClick: Campaign->Current = " + this.m_Id);
         }
 
