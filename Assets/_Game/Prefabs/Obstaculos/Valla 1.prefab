@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2132079439149913521}
   m_Layer: 0
   m_Name: Valla 1
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6142148714258476037}
   m_Layer: 0
   m_Name: polySurface188
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
