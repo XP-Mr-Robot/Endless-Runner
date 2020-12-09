@@ -4903,6 +4903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5359502037547571832}
   - component: {fileID: 2580150388350482966}
+  - component: {fileID: 4277732588376854395}
   m_Layer: 0
   m_Name: CHANCHO
   m_TagString: Untagged
@@ -4941,6 +4942,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.8
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4277732588376854395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4695871335437500610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a52487807f2b1a4ea44e68e08be4380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8620692312252064378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,9 +4995,45 @@ PrefabInstance:
       propertyPath: m_Activate.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1053865541680370239, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053865541680370239, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053865541680370239, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1662914129685370310, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
       propertyPath: m_Name
       value: MiParticula
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607253344290957801, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.9470899
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607253344290957801, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607253344290957801, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607253344290957801, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9667667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607253344290957801, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.6681648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607253344290957801, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.990566
       objectReference: {fileID: 0}
     - target: {fileID: 8827837482815657589, guid: fc83900db548ef44482ffd72dfc1d06e, type: 3}
       propertyPath: m_LocalPosition.x
