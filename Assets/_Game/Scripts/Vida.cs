@@ -65,10 +65,20 @@ public class Vida : MonoBehaviour
             Debug.Log("Game over");
             Fail.SetActive(true);
         }
+    
+
+    }
+    public void hpUP()
+    {
+        if(vidas<3)
+        {
+            vidas += 1;
+            GameObject.Find("HP").GetComponent<HP_Counter>().hpCounter += 1;
+
+        }
 
 
     }
-
     private void Death()
     {
         if(this.transform.position.y<(-3))

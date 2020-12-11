@@ -2261,6 +2261,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6361578751573397972, guid: bd378c971cda3cc478f6444b09a1a8e1, type: 3}
+      propertyPath: m_Size.y
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 6361578751573397995, guid: bd378c971cda3cc478f6444b09a1a8e1, type: 3}
       propertyPath: chunks.Array.size
       value: 33
