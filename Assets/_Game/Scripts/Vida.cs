@@ -61,11 +61,11 @@ public class Vida : MonoBehaviour
         {
             this.controller.enabled = !m_Collider.enabled;
             anim.SetTrigger("Death");
-            AudioSource.PlayClipAtPoint(audioMuerte, transform.position);
+            AudioSource.PlayClipAtPoint(audioMuerte, transform.position,2f);
             Debug.Log("Game over");
             Fail.SetActive(true);
         }
-    
+        CineMachineShake.Instance.ShakeCamera(8f,.3f);
 
     }
     public void hpUP()

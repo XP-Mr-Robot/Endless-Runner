@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\leo_x\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\leo_x\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Endless-Runner.1736912144.00" t="ExcludeRecursive" />
+    <e p="C:\Users\leo_x\Desktop\Endless-Runner" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Game" t="Include">
+          <e p="Art" t="Include">
+            <e p="Shader" t="Include">
+              <e p="MainLight.hlsl" t="Include" />
+            </e>
+          </e>
+          <e p="Fallguys" t="Include">
+            <e p="Mat" t="Include">
+              <e p="Shader" t="Include">
+                <e p="CirclePattern.hlsl" t="Include" />
+              </e>
+            </e>
+            <e p="RingInstancer.cs" t="Include" />
+            <e p="RingRadiusController.cs" t="Include" />
+          </e>
+          <e p="Sandbox" t="Include">
+            <e p="_Hakari" t="Include">
+              <e p="EffectOnCollision.cs" t="Include" />
+            </e>
+            <e p="_Juangarza" t="Include">
+              <e p="Colision.cs" t="Include" />
+            </e>
+            <e p="LeoS" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="VRG_ActivateOnSceneLoad.cs" t="Include" />
+                <e p="VRG_TurnMainCameraOff.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="ChunkGenerator.cs" t="Include" />
+            <e p="CineMachineShake.cs" t="Include" />
+            <e p="Coin.cs" t="Include" />
+            <e p="CoinCounter.cs" t="Include" />
+            <e p="CoinValue.cs" t="Include" />
+            <e p="HP_Counter.cs" t="Include" />
+            <e p="Magnet.cs" t="Include" />
+            <e p="Movement.cs" t="Include" />
+            <e p="Pause.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="PowerUP.cs" t="Include" />
+            <e p="PowerUpVida.cs" t="Include" />
+            <e p="RandomPowerUps.cs" t="Include" />
+            <e p="Rotate.cs" t="Include" />
+            <e p="SimpleCameraController.cs" t="Include" />
+            <e p="TotalScore.cs" t="Include" />
+            <e p="Vida.cs" t="Include" />
+          </e>
+        </e>
+        <e p="_VrGamesDev" t="Include">
+          <e p="Credits" t="Include">
+            <e p="VRG_Credits.cs" t="Include" />
+          </e>
+          <e p="Logs" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="VRG_Logs.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Missions" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Campaign" t="Include">
+                <e p="VRG_CampaignFinishSettings.cs" t="Include" />
+                <e p="VRG_CountdownTimer.cs" t="Include" />
+                <e p="VRG_CountdownTimerStop.cs" t="Include" />
+                <e p="VRG_DeactivateOnInstructions.cs" t="Include" />
+                <e p="VRG_MissionDigit.cs" t="Include" />
+                <e p="VRG_MissionIntegrity.cs" t="Include" />
+                <e p="VRG_MissionOnSuccess.cs" t="Include" />
+                <e p="VRG_MissionResult.cs" t="Include" />
+              </e>
+              <e p="Home" t="Include">
+                <e p="VRG_CampaignMisionButton.cs" t="Include" />
+                <e p="VRG_CampaignMisionPages.cs" t="Include" />
+                <e p="VRG_ChangeSkin.cs" t="Include" />
+              </e>
+              <e p="System" t="Include">
+                <e p="VRG_FaderScene.cs" t="Include" />
+                <e p="VRG_Game.cs" t="Include" />
+                <e p="VRG_Managers.cs" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="VRG_Game_UI.cs" t="Include" />
+                <e p="VRG_SetBackgroundColor.cs" t="Include" />
+                <e p="VRG_ToogleIcon.cs" t="Include" />
+                <e p="VRG_ToogleMute.cs" t="Include" />
+              </e>
+              <e p="Utils" t="Include">
+                <e p="VRG_GoToScene.cs" t="Include" />
+                <e p="VRG_OpenUrl.cs" t="Include" />
+                <e p="VRG_UnloadAdditiveScene.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Shared" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Montserrat" t="Include">
+                <e p="OFL.txt" t="Include" />
+              </e>
+              <e p="Open_Sans" t="Include">
+                <e p="LICENSE.txt" t="Include" />
+              </e>
+              <e p="Oswald" t="Include">
+                <e p="OFL.txt" t="Include" />
+                <e p="README.txt" t="Include" />
+              </e>
+              <e p="Peddana" t="Include">
+                <e p="OFL.txt" t="Include" />
+              </e>
+              <e p="Raleway" t="Include">
+                <e p="OFL.txt" t="Include" />
+                <e p="README.txt" t="Include" />
+              </e>
+              <e p="Roboto" t="Include">
+                <e p="LICENSE.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Classes" t="Include">
+                <e p="VRG_CSV.cs" t="Include" />
+              </e>
+              <e p="Editor" t="Include">
+                <e p="SceneNameAttribute.cs" t="Include" />
+              </e>
+              <e p="Remote" t="Include">
+                <e p="VRG_Announcement.cs" t="Include" />
+                <e p="VRG_Remote.cs" t="Include" />
+              </e>
+              <e p="System" t="Include">
+                <e p="VRG_DataBase.cs" t="Include" />
+                <e p="VRG_Fader.cs" t="Include" />
+                <e p="VRG_Session.cs" t="Include" />
+              </e>
+              <e p="Utils" t="Include">
+                <e p="VRG_AttachToCamera.cs" t="Include" />
+                <e p="VRG_Delayed.cs" t="Include" />
+                <e p="VRG_Destroy.cs" t="Include" />
+                <e p="VRG_DestroyOnSceneLoad.cs" t="Include" />
+                <e p="VRG_DontDestroyOnLoad.cs" t="Include" />
+                <e p="VRG_Exit.cs" t="Include" />
+                <e p="VRG_LoadFromSession.cs" t="Include" />
+                <e p="VRG_Rotate.cs" t="Include" />
+                <e p="VRG_SaveToSession.cs" t="Include" />
+                <e p="VRG_SFx.cs" t="Include" />
+                <e p="VRG_SpawnPrefab.cs" t="Include" />
+                <e p="VRG_Unparent.cs" t="Include" />
+              </e>
+              <e p="VRG_Base.cs" t="Include" />
+              <e p="VRG_CloneMe.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="BOXOPHOBIC" t="Include">
+          <e p="Skybox Cubemap Extended" t="Include">
+            <e p="Core" t="Include">
+              <e p="Editor" t="Include">
+                <e p="SkyboxExtendedWindows.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="Skybox Cubemap Extended.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="FlatKit" t="Include">
+          <e p="[READ ME].txt" t="Include" />
+        </e>
+        <e p="materials" t="Include">
+          <e p="MatCap.shader" t="Include" />
+        </e>
+        <e p="Modern UI Pack" t="Include">
+          <e p="Editor" t="Include">
+            <e p="ContextMenu.cs" t="Include" />
+            <e p="ExtendedColorPicker.cs" t="Include" />
+            <e p="InitMUIP.cs" t="Include" />
+            <e p="UIManagerEditor.cs" t="Include" />
+          </e>
+          <e p="Read Me.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Animated Icon" t="Include">
+              <e p="AnimatedIconHandler.cs" t="Include" />
+            </e>
+            <e p="Button" t="Include">
+              <e p="ButtonManager.cs" t="Include" />
+              <e p="ButtonManagerBasic.cs" t="Include" />
+              <e p="ButtonManagerBasicEditor.cs" t="Include" />
+              <e p="ButtonManagerBasicIcon.cs" t="Include" />
+              <e p="ButtonManagerBasicIconEditor.cs" t="Include" />
+              <e p="ButtonManagerBasicWithIcon.cs" t="Include" />
+              <e p="ButtonManagerBasicWithIconEditor.cs" t="Include" />
+              <e p="ButtonManagerEditor.cs" t="Include" />
+              <e p="ButtonManagerIcon.cs" t="Include" />
+              <e p="ButtonManagerIconEditor.cs" t="Include" />
+              <e p="ButtonManagerWithIcon.cs" t="Include" />
+              <e p="ButtonManagerWithIconEditor.cs" t="Include" />
+            </e>
+            <e p="Demo" t="Include">
+              <e p="DemoListShadow.cs" t="Include" />
+              <e p="DemoTopButton.cs" t="Include" />
+              <e p="LaunchURL.cs" t="Include" />
+            </e>
+            <e p="Dropdown" t="Include">
+              <e p="CustomDropdown.cs" t="Include" />
+              <e p="CustomDropdownEditor.cs" t="Include" />
+              <e p="DropdownMultiSelect.cs" t="Include" />
+              <e p="DropdownMultiSelectEditor.cs" t="Include" />
+            </e>
+            <e p="Fixes" t="Include">
+              <e p="LayoutGroupPositionFix.cs" t="Include" />
+              <e p="UIElementInFront.cs" t="Include" />
+            </e>
+            <e p="Horizontal Selector" t="Include">
+              <e p="HorizontalSelector.cs" t="Include" />
+              <e p="HorizontalSelectorEditor.cs" t="Include" />
+            </e>
+            <e p="Input Field" t="Include">
+              <e p="CustomInputField.cs" t="Include" />
+            </e>
+            <e p="Modal Window" t="Include">
+              <e p="ModalWindowManager.cs" t="Include" />
+              <e p="ModalWindowManagerEditor.cs" t="Include" />
+              <e p="ModalWindowTabs.cs" t="Include" />
+            </e>
+            <e p="Notification" t="Include">
+              <e p="NotificationManager.cs" t="Include" />
+              <e p="NotificationManagerEditor.cs" t="Include" />
+              <e p="NotificationStacking.cs" t="Include" />
+            </e>
+            <e p="Progress Bar" t="Include">
+              <e p="PBFilled.cs" t="Include" />
+              <e p="ProgressBar.cs" t="Include" />
+              <e p="ProgressBarEditor.cs" t="Include" />
+            </e>
+            <e p="Rendering" t="Include">
+              <e p="UIGradient.cs" t="Include" />
+              <e p="UIGradientEditor.cs" t="Include" />
+            </e>
+            <e p="Slider" t="Include">
+              <e p="RadialSlider.cs" t="Include" />
+              <e p="RadialSliderEditor.cs" t="Include" />
+              <e p="RangeMaxSlider.cs" t="Include" />
+              <e p="RangeMinSlider.cs" t="Include" />
+              <e p="RangeSlider.cs" t="Include" />
+              <e p="SliderManager.cs" t="Include" />
+              <e p="SliderManagerEditor.cs" t="Include" />
+            </e>
+            <e p="Switch" t="Include">
+              <e p="SwitchManager.cs" t="Include" />
+              <e p="SwitchManagerEditor.cs" t="Include" />
+            </e>
+            <e p="Toggle" t="Include">
+              <e p="ToggleAnim.cs" t="Include" />
+            </e>
+            <e p="Tooltip" t="Include">
+              <e p="TooltipContent.cs" t="Include" />
+              <e p="TooltipManager.cs" t="Include" />
+              <e p="TooltipManagerEditor.cs" t="Include" />
+            </e>
+            <e p="UI Manager" t="Include">
+              <e p="UIManager.cs" t="Include" />
+              <e p="UIManagerAnimatedIcon.cs" t="Include" />
+              <e p="UIManagerButton.cs" t="Include" />
+              <e p="UIManagerButtonEditor.cs" t="Include" />
+              <e p="UIManagerDropdown.cs" t="Include" />
+              <e p="UIManagerHSelector.cs" t="Include" />
+              <e p="UIManagerInputField.cs" t="Include" />
+              <e p="UIManagerModalWindow.cs" t="Include" />
+              <e p="UIManagerNotification.cs" t="Include" />
+              <e p="UIManagerProgressBar.cs" t="Include" />
+              <e p="UIManagerProgressBarLoop.cs" t="Include" />
+              <e p="UIManagerProgressBarLoopEditor.cs" t="Include" />
+              <e p="UIManagerScrollbar.cs" t="Include" />
+              <e p="UIManagerSlider.cs" t="Include" />
+              <e p="UIManagerSliderEditor.cs" t="Include" />
+              <e p="UIManagerSwitch.cs" t="Include" />
+              <e p="UIManagerToggle.cs" t="Include" />
+              <e p="UIManagerTooltip.cs" t="Include" />
+            </e>
+            <e p="Window" t="Include">
+              <e p="WindowDragger.cs" t="Include" />
+              <e p="WindowManager.cs" t="Include" />
+              <e p="WindowManagerEditor.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Endless-Runner.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

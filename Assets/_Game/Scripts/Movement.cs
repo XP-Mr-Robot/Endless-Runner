@@ -198,12 +198,26 @@ public class Movement: MonoBehaviour
                     Debug.Log("Arriba");
                     y = JumpPower;
                     InJump = true;
+                    anim.SetTrigger("IsJumping");
 
+                    AudioSource.PlayClipAtPoint(audioSalto, transform.position,2f);
                 }
-
+                if (distance.y < 0)
+                {
+                    
+                        Debug.Log("Abajo");
+                        RollCounter = 0.5f;
+                        y -= 10f;
+                        m_char.center = new Vector3(0, ColCenterY/2f, 0);
+                        m_char.height = ColHeight/2f;
+                        InRoll = true;
+                        InJump = false;
+                        anim.SetTrigger("Agachao");
+                    
+                }
             }
 
-            else if (distance.y < 0)
+            else 
             {
                 y -= JumpPower * 2 * Time.deltaTime;
                 InJump = false;
@@ -231,7 +245,7 @@ public class Movement: MonoBehaviour
                 InJump = true;
                 anim.SetTrigger("IsJumping");
 
-                AudioSource.PlayClipAtPoint(audioSalto, transform.position, 0.5f);
+                AudioSource.PlayClipAtPoint(audioSalto, transform.position);
             }
 
         }
